@@ -203,6 +203,25 @@
             </div>
         </section>
     </div>
-    <script type="module" src="java.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCzvqidGBhusv28lUHv06CRY8EFkw_BHWA",
+          authDomain: "luxana-isp.firebaseapp.com",
+          projectId: "luxana-isp",
+          storageBucket: "luxana-isp.appspot.com",
+          messagingSenderId: "585247804976",
+          appId: "1:585247804976:web:6f92cf206f53472c8e67f5"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+    <script src="java.js"></script>
 </body>
 </html>
