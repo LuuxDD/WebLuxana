@@ -8,3 +8,10 @@ window.addEventListener('scroll', function() {
     }
 });
 
+const miFormulario = document.querySelector ("#formulario");
+
+miFormulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+    console.log(event)
+} )
+

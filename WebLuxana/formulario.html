@@ -10,14 +10,21 @@
 
     <div>
         <dialog open="modal">
-            <section id="formulario">
-                <h1 class="h1_form">Quiero Inscribirme</h1>
-                <h2 class="h2_form">Para recibir novedades de Luxana</h2>
-                <input class="input" type="text" placeholder="Escribe tu nombre y apellido">
-                <input class="input" type ="text"placeholder="Evento al que te suscribís">
-                <input class="input" type="email"placeholder = "Correo Electronico">
-                <input class="input_enviar" type="submit" value="Enviar">
-            </section>
+            <form id="formulario">
+                <h1 class="h1_form">¡Únete a Nosotros!</h1>
+                <h2 class="h2_form">Suscríbete para recibir las últimas novedades de Luxana</h2>
+                <input required class="input" type="text" placeholder="Nombre y Apellido">
+                <label  for="options">Selecciona el evento al que deseas asistir</label>
+                    <select id="options" name="options">
+                    <option class="option2" value="opcion1">Festejo de la niñez</option>
+                    <option class="option2" value="opcion2">Escuela Play</option>
+                    <option class="option2" value="opcion3">Enadrya</option>
+                    <option class="option2" value="opcion3">Juegos en la plaza</option>
+                    <option class="option2" value="opcion3">Players Night</option>
+                    </select>
+                <input required ="input" type="email"placeholder = "Correo Electronico">
+                <input required ="input_enviar" type="submit" value="Enviar">
+            </form>
         </dialog>
     </div>
 </body>
