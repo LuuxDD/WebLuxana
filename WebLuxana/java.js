@@ -12,6 +12,26 @@ const miFormulario = document.querySelector ("#formulario");
 
 miFormulario.addEventListener("submit", (event) => {
     event.preventDefault();
-    console.log(event)
-} )
+    const nombreInput = document.querySelector('#nombreInput');
+    const emailInput = document.querySelector('#emailInput');
+    const optionsInput = document.querySelector('#optionsInput')
+
+    const mensaje = {
+        nombre: nombreInput.value,
+        email: emailInput.value,
+        opcion: optionsInput.value
+    }
+    fetch('https://luxana-isp-default-rtdb.firebaseio.com/correo.json', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(mensaje)
+    }).then((respuesta) => {
+        return respuesta.json(); 
+    }).then((dataFinal) => {
+    
+    });
+    
+});
 

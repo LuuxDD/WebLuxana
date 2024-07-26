@@ -229,38 +229,13 @@ button {
     padding-top: 40px;
 }
 
-/* -----------> Paginacion <----------- */
-
-.pagination {
-    display: inline-block;
-    padding-right: 0
-}
-
-.pagination a {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    border: 1px solid var(--color-text-light);
-    margin: 4px 4px;
-    border-radius: 4px;
-
-}
-
-.pagination a:hover {
-    background-color: var(--color-text-light);
-    color: var(--color-primary);
-}
-
-.pagination a.active {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    border: 1px solid var(--color-primary);
-}
-
 /* ---------> Clubes y Comunidades <--------- */
+
+.clubes_{
+    display: inline-block;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .div_img_juegosDem¿Mesa{
     width: 505px;
     height: 505px;
@@ -276,11 +251,14 @@ button {
     margin-top: 5px;
     margin-left: 15px;
     opacity: 0.8;
+    display: inline-block;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    
 }
 
 .img-juegosDeMesa:hover {
     width: 515px;
-    height: 515px;;
+    height: 515px;
 }
 
 /* ---------> Footer <-------- */
@@ -288,11 +266,12 @@ button {
     text-align: center;
     background-color: #021222;
     color: #fff;
-    width: 100%;
+    width: 1600px;
     height: 200px;
     z-index: 1000;
-    margin-bottom: 0px;
     padding-top: 40px;
+    margin: 0px;
+
 }
 
 .div_a_icons {
@@ -325,6 +304,7 @@ button {
     box-sizing: border-box;
     font-size: 16px;
     background-color: var(--color-primary); 
+    color: #fff;
 
 }
 label {
@@ -376,10 +356,4 @@ dialog {
 .h2_form {
     font-size: 1.5em; 
     margin-bottom: 20px;
-}
-
-/* Diseño pagina 1 de actividades */ 
-
-body {
-    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
 }
