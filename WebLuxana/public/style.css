@@ -11,8 +11,8 @@
     background-position: top;
     position: relative;
     margin: 0;
-    
-
+    background-repeat: no-repeat;
+    background-color: #011529;
 }
 .titulo{ 
     color: #fff;
@@ -45,7 +45,7 @@
 }
 
 .parrafo_inicio p {
-    margin-bottom: 10px; /* Espacio inferior para los párrafos */
+    margin-bottom: 10px;
 }
 
 .opaco {
@@ -56,7 +56,7 @@
     
 }
 
-/* Menu superior de navegacion fijo */
+/* -----------> Menu superior de navegacion fijo <----------- */
 
 .nav__navegacion {
     text-align: center;
@@ -107,7 +107,7 @@
     display: block;
 }
 
-/*Parrafo de presentacion */ 
+/* -----------> Parafo de presentacion <----------- */
 
 .parrafo_inicio {
     opacity: 0; /* Inicialmente oculto */
@@ -156,7 +156,7 @@
     margin-top: 20px; 
 }
 
-.title_eventos, .title_actividades , .title_clubes{
+.title_eventos, .title_actividades , .title_clubes , .sub_title_clubes, .h2_actividades_page1{
     color: #fff;
     font-size: 50px;
     text-align: center;
@@ -195,7 +195,7 @@ p{
     padding-right: 5px;
 }
 
-/* Boton de "Avisarme" */
+/* -----------> Boton Avisarme <----------- */
 
 button {
     background-color: #001d3d;
@@ -223,47 +223,55 @@ button {
     padding-right: 0px;
 }
 
-/*Paginacion */ 
+/* -----------> Actividad <----------- */
+.active {
+    opacity: 0.8;
+    padding-top: 40px;
+}
 
-.pagination {
+/* ---------> Clubes y Comunidades <--------- */
+
+.clubes_{
     display: inline-block;
-    padding-right: 0
+    flex-direction: column;
+    min-height: 100vh;
+}
+.div_img_juegosDem¿Mesa{
+    width: 505px;
+    height: 505px;
+    background-color: #001d3d;
+    border-radius: 5px;
+    margin-left: 15px;
+    display: inline;
+}
+.img-juegosDeMesa{
+    width: 495px;
+    height: 495px;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 15px;
+    opacity: 0.8;
+    display: inline-block;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    
 }
 
-.pagination a {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    border: 1px solid var(--color-text-light);
-    margin: 4px 4px;
-    border-radius: 4px;
-
-
+.img-juegosDeMesa:hover {
+    width: 515px;
+    height: 515px;
 }
 
-.pagination a:hover {
-    background-color: var(--color-text-light);
-    color: var(--color-primary);
-}
-
-.pagination a.active {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
-    border: 1px solid var(--color-primary);
-}
 /* ---------> Footer <-------- */
 .contactp_footer {
     text-align: center;
     background-color: #021222;
     color: #fff;
-    width: 100%;
+    width: 1600px;
     height: 200px;
     z-index: 1000;
-    margin-bottom: 0px;
     padding-top: 40px;
+    margin: 0px;
+
 }
 
 .div_a_icons {
@@ -275,7 +283,6 @@ button {
 
 /* ------> Ventana Modal <------ */ 
 
-
 .body_modal {
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     background-repeat: no-repeat;
@@ -285,10 +292,9 @@ button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-.input, .input_enviar {
+.input, .input_enviar, label, select {
     display: block;
     margin: 15px auto;
     width: 90%;
@@ -297,16 +303,32 @@ button {
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 16px;
+    background-color: var(--color-primary); 
+    color: #fff;
+
+}
+label {
+    color: var(--color-text-light);
+}
+
+select {
+    background-color: var(--color-primary); 
+    color: var(--color-text-light); 
+}
+
+/* dentro del menú desplegable */
+option {
+    background-color: var(--color-secondary); 
+    color: var(--color-text-light);
 }
 
 .input_enviar:hover {
-    background-color: #72abe9f6;
+    background-color: #72abe9f6; 
 }
 
-.input:focus {
-    border-color: var(--color-secondary);
-    outline: none;
-
+.input:focus, select:focus {
+    border-color: var(--color-secondary); 
+    outline: none; 
 }
 
 dialog {
@@ -322,17 +344,16 @@ dialog {
 
 .h1_form, .h2_form {
     color: var(--color-text-light);
-    text-align: center;
+    text-align: center; 
     margin: 10px 0;
 }
 
 .h1_form {
-    font-size: 2em;
+    font-size: 2em; 
     margin-top: 0;
 }
 
 .h2_form {
-    font-size: 1.5em;
+    font-size: 1.5em; 
     margin-bottom: 20px;
 }
-
