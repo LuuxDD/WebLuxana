@@ -30,7 +30,9 @@ miFormulario.addEventListener("submit", (event) => {
     }).then((respuesta) => {
         return respuesta.json(); 
     }).then((dataFinal) => {
-    
+        console.log('Datos guardados:', dataFinal);
+        alert('¡Suscripción exitosa! Gracias por unirte a nosotros.');
+        miFormulario.reset();
     });
     
 });
